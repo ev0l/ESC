@@ -129,7 +129,10 @@
 
 -(void)saveCurrentRegistry {
 	if([self maxRegistries] <= [registries count]){
-		[registries insertObject:[NSNull new] atIndex:([registries count] - [self maxRegistries])];
+		NSUInteger removeIndex = [registries count] - [self maxRegistries];
+		
+		[registries replaceObjectAtIndex:removeIndex withObject:self];
+		
 	}
 	WHStateRegistry* newReg = [currentRegistry copy];
 	[registries addObject:newReg];
