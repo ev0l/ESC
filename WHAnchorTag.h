@@ -14,5 +14,6 @@
 }
 
 -(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args;
+-(id)block:(void (^)()) aBlock;
 
 @end

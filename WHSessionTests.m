@@ -16,7 +16,7 @@
 	value = @"Foo";
 }
 
--(id)setValue:(NSString*)aString{
+-(id)setTestValue:(NSString*)aString{
 	value = aString;
 	return self;
 }
@@ -30,7 +30,7 @@
 										  withSelector:@selector(description) 
 										  andArguments:[NSArray new]];
 	
-	WHCallback* callback = [session callbackByKey:key];
+	WHMethodCallback* callback = [session callbackByKey:key];
 	STAssertEquals(callback.selector,@selector(description),@"Wrong selector");
 	STAssertEquals(callback.object,self,@"We should be self");
 	

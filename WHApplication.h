@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>]
+#import <Cocoa/Cocoa.h>
 #include "fcgi_config.h"
 #include "fcgiapp.h"
 
@@ -29,6 +29,7 @@
 -(id)newSessionObject;
 -(id)newMainComponent;
 -(NSUInteger)maxThreads;
+-(void)processSessionWithOutLocks:(WHSession *)session withRequest:(WHRequest *)request;
 
 -(void)handleRequest:(FCGX_Request*)fastCgiRequest;
 -(NSString*)newSessionKey;
@@ -40,13 +41,13 @@
 -(id)newRoot;
 -(NSInteger)maxSessions;
 -(void)removeOldestSession;
+-(void)addSession:(WHSession*) session;
 
 //The date time that session should be expired
 //This should be in the past
 //Sessions might be older than this but this serves as a 
 // reference for cleanup
 -(NSDate*)sessionExpireDate;
-
 -(void)expireSessions;
 
 @end

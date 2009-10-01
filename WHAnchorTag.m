@@ -15,14 +15,23 @@
 	return @"a";
 }
 
--(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args {
-	[self registerCallbackOnObject:anObject withSelector:aSelector andArguments:args];
+-(void)postCallbackSetup {
 	NSString* href = [self.canvas.session urlWithCallbackKey:callbackKey];
 	if(href != nil){
 		[self attributeAt:@"href" put:href];	
 	}
+}
+
+-(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args {
+	[self registerCallbackOnObject:anObject withSelector:aSelector andArguments:args];
+	[self postCallbackSetup];
 	return self;
 }
 
+-(id)block:(void (^)()) aBlock{
+	[self registerBlock: aBlock];
+	[self postCallbackSetup];
+	return self;
+}
 
 @end

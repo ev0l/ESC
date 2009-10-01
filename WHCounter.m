@@ -39,7 +39,6 @@
 
 -(id)add {
 	counter = [NSNumber numberWithInt:([counter intValue] +1)];
-	
 	return self;
 }
 
@@ -78,10 +77,7 @@
 	
 	[div addContent:[[html tag:@"h1"] with:[NSString stringWithFormat:@"%d",[counter intValue]]]];
 	
-	[div addContent:[[[html anchorTag] callbackOnObject:self 
-									   withSelector:@selector(add) 
-									   andArguments:nil]
-				  with:@"++"]];
+	[div addContent:[[[html anchorTag] block:^{[self add];}] with:@"++"]];
 	
 	
 	[div addContent:[[[html anchorTag] callbackOnObject:self 

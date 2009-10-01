@@ -106,6 +106,15 @@
 }
 
 
+-(void)registerBlock:(void (^)()) aBlock {
+	callbackKey = [[self.canvas session] registerBlock:aBlock];
+}
+
+
+-(void)registerBlockWithArgument:(void (^)(id anObject)) aBlock {
+	callbackKey = [[self.canvas session] registerBlockWithArgument:aBlock];
+}
+
 -(void)registerCallbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args{
 	callbackKey = [[self.canvas session] registerCallbackOnObject:anObject 
 												   withSelector:aSelector 

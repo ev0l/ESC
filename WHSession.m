@@ -9,6 +9,9 @@
 #import "WHSession.h"
 #import "WHHtmlCanvas.h"
 #import "WHComponent.h"
+#import "WHBlockCallback.h"
+#import "WHBlockWithArgumentCallback.h"
+
 
 //REFACTOR make callbacks and currentRegistries dictionaries ?
 //Or we could compact these arrays and add a factor to the 
@@ -40,8 +43,7 @@
 
 -(NSUInteger)newCallbackKey{
 	if([self maxCallbacks] <= [callbacks count]){
-		//Put self in the place becuase we have already
-		// given out the keys
+		
 		// we might want to refactor to use a dictionay for more efficent
 		// storage ? (NSArray might still be a better use of space)
 		[callbacks replaceObjectAtIndex:([callbacks count]-[self maxCallbacks])
@@ -52,11 +54,15 @@
 		 
 }
 
--(WHCallback*)callbackByKey:(NSUInteger)aKey{
+-(WHMethodCallback*)callbackByKey:(NSUInteger)aKey{
 	if([callbacks count] <= aKey){
 		return nil;
 	}
-	return [callbacks objectAtIndex:aKey];
+	WHMethodCallback* callback = [callbacks objectAtIndex:aKey];
+	if([callback isEqual:[NSNull null]]){
+		return nil;
+	}
+	return callback;
 	
 }
 
@@ -73,8 +79,8 @@
 }
 
 -(NSUInteger)registerCallbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args{
-	WHCallback* callback;
-	callback = [WHCallback newWithObject:anObject andSelector:aSelector];
+	WHMethodCallback* callback;
+	callback = [WHMethodCallback newWithObject:anObject andSelector:aSelector];
 	callback.arguments = args;
 	
 	NSUInteger nextKey = [self newCallbackKey];
@@ -84,6 +90,30 @@
 	
 }
 
+-(NSUInteger)registerCallback:(id)aBlockCallback {
+	NSUInteger nextKey = [self newCallbackKey];
+	[callbacks addObject:aBlockCallback];
+	return nextKey;
+	
+}
+
+-(NSUInteger)registerBlock: (void (^)()) aBlock  {
+	WHBlockCallback* blockCallback = [WHBlockCallback new];
+	blockCallback.block = aBlock;
+	
+	return [self registerCallback:blockCallback];
+	
+}
+
+
+-(NSUInteger)registerBlockWithArgument: (void (^)(id argument))aBlock {
+	
+	WHBlockWithArgumentCallback* blockCallback = [WHBlockWithArgumentCallback new];
+	blockCallback.block = aBlock;
+	
+	return [self registerCallback:blockCallback];
+	
+}
 
 -(NSUInteger)nextRegistryKey {
 	return [registries count];
@@ -121,6 +151,9 @@
 		return;
 	}
 	WHStateRegistry* res = [registries objectAtIndex:aKey];
+	if([res isEqual:[NSNull null]]){
+		return;
+	}
 	if((NSObject*)res != self){
 		currentRegistry = res;
 		[currentRegistry restoreState];
@@ -131,7 +164,7 @@
 	if([self maxRegistries] <= [registries count]){
 		NSUInteger removeIndex = [registries count] - [self maxRegistries];
 		
-		[registries replaceObjectAtIndex:removeIndex withObject:self];
+		[registries replaceObjectAtIndex:removeIndex withObject:[NSNull new]];
 		
 	}
 	WHStateRegistry* newReg = [currentRegistry copy];

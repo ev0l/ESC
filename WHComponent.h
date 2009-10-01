@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "WHHtmlCanvas.h"
 #import "WHHtmlRoot.h"
-#import "WHCallback.h"
+#import "WHMethodCallback.h"
 
 
 @interface WHComponent : NSObject {
@@ -17,7 +17,7 @@
 	WHComponent* parentComponent;
 	WHComponent* dialog;
 	
-	WHCallback* answerCallback;
+	WHMethodCallback* answerCallback;
 	
 }
 

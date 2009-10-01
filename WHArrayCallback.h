@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "WHCallback.h"
+#import "WHMethodCallback.h"
 
-@interface WHArrayCallback : WHCallback {
+@interface WHArrayCallback : WHMethodCallback {
 	NSArray * items; /*a group of items that can be 
 								** Passed as an arg to the callback */
 }

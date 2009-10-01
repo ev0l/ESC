@@ -1,32 +1,34 @@
 //
-//  WHCallback.m
+//  WHBlockCallback.m
 //  ESC
 //
 //  Created by William Harford on 09-09-29.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "WHCallback.h"
+#import "WHBlockCallback.h"
 
 
-@implementation WHCallback
+@implementation WHBlockCallback
 
-
+@synthesize block;
 
 -(id)runWithArguments:(NSArray*)args{
-	return nil;
+	return [self run];
 }
 /*
  ** Inserts an argument at the beginning of the list 
  ** and runs this callback
  */
 -(id)runWithArgument:(id)anObject {
-	return nil;
+	return [self run];
 }
 
 -(id)run{
-	return nil;
+	block();
+	return self;
 }
+
 
 
 

@@ -174,10 +174,14 @@
 	session.key = [self newSessionKey];
 	[session.mainComponent setSession:session];
 	[self makeRoomForSession];
-	[sessions setObject:session	forKey:session.key];
+	[self addSession:session];
 	//Some day
 	//[NSThread detachNewThreadSelector: @selector(processSession:) toTarget:self withObject: session];
 	[self processSession:session withRequest:request];
+}
+
+-(void)addSession:(WHSession*) session{
+	[sessions setObject:session	forKey:session.key];
 }
 
 
@@ -190,9 +194,7 @@
 	}
 }
 
-//THis method is getting a little long FIXME
--(void)processSession: (WHSession*)session withRequest:(WHRequest*)request {
-	[session lock];
+-(void)processSessionWithOutLocks:(WHSession *)session withRequest:(WHRequest *)request{
 	session.lastRequest = request;
 	[session handleRequest];
 	id canvas = [self newCanvas];
@@ -204,7 +206,7 @@
 	NSString* content = [contentTag description];
 	
 	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out,"Accept-Charset: utf-8;\r\n");
-	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out,"Content-Length: %d\r\n",[content length]);	
+	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out,"Content-Length: %d\r\n",strlen([content UTF8String]));	
 	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out,"Content-Type: ");
 	
 	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out, "%s; charset=UTF-8\r\n\r\n",[[htmlRoot mimeType] UTF8String]);
@@ -213,6 +215,12 @@
 	FCGX_FPrintF(session.lastRequest.fastCgiRequest->out,[content UTF8String]);
 	[self doneWithRequest:request];
 	[session save];
+}
+
+//THis method is getting a little long FIXME
+-(void)processSession: (WHSession*)session withRequest:(WHRequest*)request {
+	[session lock];
+	[self processSessionWithOutLocks:session withRequest:request];
 	[session unlock];
 }
 

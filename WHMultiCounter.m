@@ -7,7 +7,7 @@
 //
 
 #import "WHMultiCounter.h"
-#import "WHTagCollection.h";
+#import "WHTagCollection.h"
 
 
 @implementation WHMultiCounter

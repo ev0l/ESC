@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-#import "WHCallback.h"
+#import "WHMethodCallback.h"
 #import "WHStateRegistry.h"
 #import "WHRequest.h"
 #import "WHArrayCallback.h"
@@ -40,7 +40,7 @@
 -(NSUInteger)maxCallbacks;
 -(NSUInteger)newCallbackKey;
 -(NSUInteger)maxRegistries;
--(WHCallback*)callbackByKey:(NSUInteger)aKey;
+-(WHMethodCallback*)callbackByKey:(NSUInteger)aKey;
 -(NSUInteger)registerCallbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args;
 -(NSUInteger)registerArrayCallbackOnObject:(id)anObject withSelector:(SEL)aSelector arguments:(NSArray*)args andItems:(NSArray*)items;
 -(void)registerObject: (id)anObject onKeyPath:(NSString*)aKeyPath;
@@ -58,5 +58,9 @@
 -(void)save;
 
 -(NSString*)renderMainOn:(WHHtmlCanvas*) html;
+
+-(NSUInteger)registerBlock: (void (^)()) aBlock ;
+
+-(NSUInteger)registerBlockWithArgument: (void (^)(id argument))aBlock;
 
 @end

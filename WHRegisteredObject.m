@@ -16,14 +16,12 @@
 @synthesize keyPath;
 
 -(void)restoreState {
-	NSLog(@"Retoring %@ to %@",keyPath, [value description]);
 	[onObject setValue:value forKey:keyPath];
 	
 }
 
 -(void)deriveValue {
 	value = [[onObject valueForKey:keyPath] copy];
-	NSLog(@"Derived %@ to %@",keyPath, [value description]);
 }
 
 

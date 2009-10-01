@@ -14,6 +14,7 @@
 	NSString* type;
 }
 -(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args;
+-(id)block:(void (^)(id anObject)) aBlock;
 
 
 @property (retain) NSString* type;

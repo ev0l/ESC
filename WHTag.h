@@ -33,4 +33,8 @@
 -(WHTag*)text:(NSString*)text;
 -(NSString*)liveUpdateFunctionForUrl:(NSString*)url;
 
+-(void)registerBlock:(void (^)()) aBlock;
+
+-(void)registerBlockWithArgument:(void (^)(id anObject)) aBlock ;
+
 @end

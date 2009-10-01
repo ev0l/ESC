@@ -1,12 +1,12 @@
 
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "WHCallback.h"
+#import "WHMethodCallback.h"
 
 @interface WHCallbackTest : SenTestCase {
 	
 	BOOL called;
-	WHCallback* callback;
+	WHMethodCallback* callback;
 	NSString* argument;
 	NSString* argument1;
 	NSString* argument2;

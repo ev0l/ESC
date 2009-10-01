@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "WHApplication.h"
+#import "WHGCDApplication.h"
 
-@interface WHExampleApplication : WHApplication {
+@interface WHExampleApplication : WHGCDApplication {
 
 }
 

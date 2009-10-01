@@ -110,7 +110,7 @@
 
 -(void)answerCallbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args{
 
-	answerCallback = [WHCallback newWithObject:anObject andSelector:aSelector];
+	answerCallback = [WHMethodCallback newWithObject:anObject andSelector:aSelector];
 	answerCallback.arguments = args;
 	
 }

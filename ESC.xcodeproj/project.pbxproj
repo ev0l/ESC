@@ -23,10 +23,31 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		CE1A9005103E22AB00C4C81A /* libfcgi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C94621002B54B00E59B43 /* libfcgi.dylib */; };
+		CE298D5C1072CBFD00D50BFA /* WHCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE298D5A1072CBFD00D50BFA /* WHCallback.h */; };
+		CE298D5D1072CBFD00D50BFA /* WHCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE298D5B1072CBFD00D50BFA /* WHCallback.m */; };
+		CE298D6A1072CDC700D50BFA /* WHBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE298D681072CDC700D50BFA /* WHBlockCallback.h */; };
+		CE298D6B1072CDC700D50BFA /* WHBlockCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE298D691072CDC700D50BFA /* WHBlockCallback.m */; };
+		CE298DA51072E49300D50BFA /* WHBlockWithArgumentCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE298DA31072E49300D50BFA /* WHBlockWithArgumentCallback.h */; };
+		CE298DA61072E49300D50BFA /* WHBlockWithArgumentCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE298DA41072E49300D50BFA /* WHBlockWithArgumentCallback.m */; };
 		CE2D4CBE100C261D005177DF /* WHInformDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6BD2511004525200F00EB3 /* WHInformDialog.h */; };
 		CE2D4CBF100C261D005177DF /* WHInformDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6BD2521004525200F00EB3 /* WHInformDialog.m */; };
 		CE2D4D4A100C2ECD005177DF /* WHChoiceDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D4CC1100C2675005177DF /* WHChoiceDialog.m */; };
 		CE3E6D3D1013FD8200F128B3 /* WHFormSelectTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E6D3A1013FD6C00F128B3 /* WHFormSelectTag.m */; };
+		CE5F357A106C622600A4362D /* WHGCDApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5F3578106C622600A4362D /* WHGCDApplication.h */; };
+		CE5F357B106C622600A4362D /* WHGCDApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F3579106C622600A4362D /* WHGCDApplication.m */; };
+		CE5F36621070202700A4362D /* ESC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C940C1002B38E00E59B43 /* ESC.framework */; };
+		CE5F36771070204300A4362D /* WHApplicationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B4987100153EC0057E7B3 /* WHApplicationTest.m */; };
+		CE5F367A1070204E00A4362D /* WHArrayCallbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6860C40FF843CE00551141 /* WHArrayCallbackTests.m */; };
+		CE5F367B1070204F00A4362D /* WHCallbackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87C2210FF468120021A776 /* WHCallbackTest.m */; };
+		CE5F367C1070205000A4362D /* WHCoreRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11F6210FF1B939007392CA /* WHCoreRender.m */; };
+		CE5F367D1070205200A4362D /* WHRegisteredObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6860E50FF8581100551141 /* WHRegisteredObjectTest.m */; };
+		CE5F367E1070205300A4362D /* WHRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EABAB0FFC015800B18FC3 /* WHRequestTest.m */; };
+		CE5F367F1070205400A4362D /* WHSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EAAEC0FFAE1CD00B18FC3 /* WHSessionTests.m */; };
+		CE5F36801070205600A4362D /* WHStateRegistryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68610D0FF8675E00551141 /* WHStateRegistryTests.m */; };
+		CE5F36831070205900A4362D /* WHTagTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE72AAD10FF2E131004F9A09 /* WHTagTest.m */; };
+		CE5F36B5107039E000A4362D /* WHDispachQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5F36B3107039E000A4362D /* WHDispachQueue.h */; };
+		CE5F36B6107039E000A4362D /* WHDispachQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F36B4107039E000A4362D /* WHDispachQueue.m */; };
 		CE6ACAED1016C47A00ACF1D9 /* WHFormExample.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6ACAEC1016C47A00ACF1D9 /* WHFormExample.m */; };
 		CE6C94151002B3B800E59B43 /* WHGenericTag.h in Headers */ = {isa = PBXBuildFile; fileRef = CE11F70A0FF1C725007392CA /* WHGenericTag.h */; };
 		CE6C94161002B3B800E59B43 /* WHGenericTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11F70B0FF1C725007392CA /* WHGenericTag.m */; };
@@ -36,8 +57,8 @@
 		CE6C941A1002B3B800E59B43 /* WHTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11F7070FF1C71D007392CA /* WHTag.m */; };
 		CE6C941B1002B3B800E59B43 /* WHTagCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = CE900DEC1001ACFB00E37E87 /* WHTagCollection.h */; };
 		CE6C941C1002B3B800E59B43 /* WHTagCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE900DED1001ACFB00E37E87 /* WHTagCollection.m */; };
-		CE6C941D1002B3B800E59B43 /* WHCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87C2040FF45EBA0021A776 /* WHCallback.h */; };
-		CE6C941E1002B3B800E59B43 /* WHCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87C2050FF45EBA0021A776 /* WHCallback.m */; };
+		CE6C941D1002B3B800E59B43 /* WHMethodCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87C2040FF45EBA0021A776 /* WHMethodCallback.h */; };
+		CE6C941E1002B3B800E59B43 /* WHMethodCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87C2050FF45EBA0021A776 /* WHMethodCallback.m */; };
 		CE6C941F1002B3B800E59B43 /* WHArrayCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6860690FF816CC00551141 /* WHArrayCallback.h */; };
 		CE6C94201002B3B800E59B43 /* WHArrayCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68606A0FF816CC00551141 /* WHArrayCallback.m */; };
 		CE6C94211002B3B800E59B43 /* WHRegisteredObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6860D80FF84EDE00551141 /* WHRegisteredObject.h */; };
@@ -54,17 +75,6 @@
 		CE6C942C1002B3B800E59B43 /* WHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EAB900FFBE94D00B18FC3 /* WHRequest.m */; };
 		CE6C942D1002B3B800E59B43 /* WHComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6F6A0F0FFEFD2500B58426 /* WHComponent.h */; };
 		CE6C942E1002B3B800E59B43 /* WHComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6F6A100FFEFD2500B58426 /* WHComponent.m */; };
-		CE6C94631002B54B00E59B43 /* libfcgi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C94621002B54B00E59B43 /* libfcgi.dylib */; };
-		CE6C94C61002B76500E59B43 /* WHCoreRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11F6210FF1B939007392CA /* WHCoreRender.m */; };
-		CE6C94C91002B78F00E59B43 /* WHTagTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE72AAD10FF2E131004F9A09 /* WHTagTest.m */; };
-		CE6C94CA1002B79700E59B43 /* WHRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EABAB0FFC015800B18FC3 /* WHRequestTest.m */; };
-		CE6C94CB1002B79800E59B43 /* WHRegisteredObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6860E50FF8581100551141 /* WHRegisteredObjectTest.m */; };
-		CE6C94CC1002B79900E59B43 /* WHArrayCallbackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6860C40FF843CE00551141 /* WHArrayCallbackTests.m */; };
-		CE6C94CD1002B79A00E59B43 /* WHCallbackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE87C2210FF468120021A776 /* WHCallbackTest.m */; };
-		CE6C94CE1002B79B00E59B43 /* WHSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6EAAEC0FFAE1CD00B18FC3 /* WHSessionTests.m */; };
-		CE6C94CF1002B79C00E59B43 /* WHStateRegistryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE68610D0FF8675E00551141 /* WHStateRegistryTests.m */; };
-		CE6C94D01002B79D00E59B43 /* WHApplicationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7B4987100153EC0057E7B3 /* WHApplicationTest.m */; };
-		CE6C94DB1002B86C00E59B43 /* ESC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C940C1002B38E00E59B43 /* ESC.framework */; };
 		CE6C94EC1002CB9B00E59B43 /* ESC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C940C1002B38E00E59B43 /* ESC.framework */; };
 		CE6C95131002CC8200E59B43 /* WHCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE900D901001A92100E37E87 /* WHCounter.m */; };
 		CE6C95361002CD1700E59B43 /* exampleMain.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6C95351002CD1700E59B43 /* exampleMain.m */; };
@@ -83,7 +93,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE6C94C41002B74A00E59B43 /* PBXContainerItemProxy */ = {
+		CE5F36601070202300A4362D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -128,10 +138,22 @@
 		CE11F7070FF1C71D007392CA /* WHTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTag.m; sourceTree = "<group>"; };
 		CE11F70A0FF1C725007392CA /* WHGenericTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHGenericTag.h; sourceTree = "<group>"; };
 		CE11F70B0FF1C725007392CA /* WHGenericTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHGenericTag.m; sourceTree = "<group>"; };
+		CE298D5A1072CBFD00D50BFA /* WHCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCallback.h; sourceTree = "<group>"; };
+		CE298D5B1072CBFD00D50BFA /* WHCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCallback.m; sourceTree = "<group>"; };
+		CE298D681072CDC700D50BFA /* WHBlockCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBlockCallback.h; sourceTree = "<group>"; };
+		CE298D691072CDC700D50BFA /* WHBlockCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBlockCallback.m; sourceTree = "<group>"; };
+		CE298DA31072E49300D50BFA /* WHBlockWithArgumentCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHBlockWithArgumentCallback.h; sourceTree = "<group>"; };
+		CE298DA41072E49300D50BFA /* WHBlockWithArgumentCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHBlockWithArgumentCallback.m; sourceTree = "<group>"; };
 		CE2D4CC0100C2675005177DF /* WHChoiceDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHChoiceDialog.h; sourceTree = "<group>"; };
 		CE2D4CC1100C2675005177DF /* WHChoiceDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHChoiceDialog.m; sourceTree = "<group>"; };
 		CE3E6D391013FD6C00F128B3 /* WHFormSelectTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHFormSelectTag.h; sourceTree = "<group>"; };
 		CE3E6D3A1013FD6C00F128B3 /* WHFormSelectTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHFormSelectTag.m; sourceTree = "<group>"; };
+		CE5F3578106C622600A4362D /* WHGCDApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHGCDApplication.h; sourceTree = "<group>"; };
+		CE5F3579106C622600A4362D /* WHGCDApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHGCDApplication.m; sourceTree = "<group>"; };
+		CE5F365A1070201C00A4362D /* ESTTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESTTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5F365C1070201C00A4362D /* ESTTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESTTest-Info.plist"; sourceTree = "<group>"; };
+		CE5F36B3107039E000A4362D /* WHDispachQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHDispachQueue.h; sourceTree = "<group>"; };
+		CE5F36B4107039E000A4362D /* WHDispachQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHDispachQueue.m; sourceTree = "<group>"; };
 		CE6860690FF816CC00551141 /* WHArrayCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHArrayCallback.h; sourceTree = "<group>"; };
 		CE68606A0FF816CC00551141 /* WHArrayCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHArrayCallback.m; sourceTree = "<group>"; };
 		CE6860C30FF843CE00551141 /* WHArrayCallbackTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHArrayCallbackTests.h; sourceTree = "<group>"; };
@@ -151,7 +173,6 @@
 		CE6C940C1002B38E00E59B43 /* ESC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C940D1002B38E00E59B43 /* ESC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESC-Info.plist"; sourceTree = "<group>"; };
 		CE6C94621002B54B00E59B43 /* libfcgi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfcgi.dylib; path = usr/local/lib/libfcgi.dylib; sourceTree = SDKROOT; };
-		CE6C94BF1002B74100E59B43 /* ESCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C94C01002B74100E59B43 /* ESCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESCTests-Info.plist"; sourceTree = "<group>"; };
 		CE6C94E51002CB8600E59B43 /* counter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = counter; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C95351002CD1700E59B43 /* exampleMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exampleMain.m; sourceTree = "<group>"; };
@@ -185,8 +206,8 @@
 		CE72AAD10FF2E131004F9A09 /* WHTagTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTagTest.m; sourceTree = "<group>"; };
 		CE7B4986100153EC0057E7B3 /* WHApplicationTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHApplicationTest.h; sourceTree = "<group>"; };
 		CE7B4987100153EC0057E7B3 /* WHApplicationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHApplicationTest.m; sourceTree = "<group>"; };
-		CE87C2040FF45EBA0021A776 /* WHCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCallback.h; sourceTree = "<group>"; };
-		CE87C2050FF45EBA0021A776 /* WHCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCallback.m; sourceTree = "<group>"; };
+		CE87C2040FF45EBA0021A776 /* WHMethodCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMethodCallback.h; sourceTree = "<group>"; };
+		CE87C2050FF45EBA0021A776 /* WHMethodCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMethodCallback.m; sourceTree = "<group>"; };
 		CE87C2200FF468120021A776 /* WHCallbackTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCallbackTest.h; sourceTree = "<group>"; };
 		CE87C2210FF468120021A776 /* WHCallbackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCallbackTest.m; sourceTree = "<group>"; };
 		CE900D8F1001A92100E37E87 /* WHCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCounter.h; sourceTree = "<group>"; };
@@ -201,19 +222,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE5F36571070201C00A4362D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F36621070202700A4362D /* ESC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE6C940A1002B38E00E59B43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6C94631002B54B00E59B43 /* libfcgi.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE6C94BC1002B74100E59B43 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE6C94DB1002B86C00E59B43 /* ESC.framework in Frameworks */,
+				CE1A9005103E22AB00C4C81A /* libfcgi.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				CE6C940C1002B38E00E59B43 /* ESC.framework */,
-				CE6C94BF1002B74100E59B43 /* ESCTests.octest */,
 				CE6C94E51002CB8600E59B43 /* counter */,
+				CE5F365A1070201C00A4362D /* ESTTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +277,7 @@
 				CE6C940D1002B38E00E59B43 /* ESC-Info.plist */,
 				CE6C94621002B54B00E59B43 /* libfcgi.dylib */,
 				CE6C94C01002B74100E59B43 /* ESCTests-Info.plist */,
+				CE5F365C1070201C00A4362D /* ESTTest-Info.plist */,
 			);
 			name = LakeFrontHTML;
 			sourceTree = "<group>";
@@ -272,16 +294,16 @@
 		08FB77AEFE84172EC02AAC07 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CE87C2040FF45EBA0021A776 /* WHCallback.h */,
-				CE87C2050FF45EBA0021A776 /* WHCallback.m */,
+				CE87C2040FF45EBA0021A776 /* WHMethodCallback.h */,
+				CE87C2050FF45EBA0021A776 /* WHMethodCallback.m */,
 				CE6860690FF816CC00551141 /* WHArrayCallback.h */,
 				CE68606A0FF816CC00551141 /* WHArrayCallback.m */,
 				CE6860D80FF84EDE00551141 /* WHRegisteredObject.h */,
+				CE6EAAE00FF9932800B18FC3 /* WHSession.h */,
+				CE6EAAE10FF9932800B18FC3 /* WHSession.m */,
 				CE6860D90FF84EDE00551141 /* WHRegisteredObject.m */,
 				CE6860EE0FF85BF400551141 /* WHStateRegistry.h */,
 				CE6860EF0FF85BF400551141 /* WHStateRegistry.m */,
-				CE6EAAE00FF9932800B18FC3 /* WHSession.h */,
-				CE6EAAE10FF9932800B18FC3 /* WHSession.m */,
 				CEAC6638100A753500CFAF21 /* WHHtmlRoot.h */,
 				CEAC6639100A753500CFAF21 /* WHHtmlRoot.m */,
 				CE6EAB890FFB106800B18FC3 /* WHApplication.h */,
@@ -290,6 +312,16 @@
 				CE6EAB900FFBE94D00B18FC3 /* WHRequest.m */,
 				CE6F6A0F0FFEFD2500B58426 /* WHComponent.h */,
 				CE6F6A100FFEFD2500B58426 /* WHComponent.m */,
+				CE5F3578106C622600A4362D /* WHGCDApplication.h */,
+				CE5F3579106C622600A4362D /* WHGCDApplication.m */,
+				CE5F36B3107039E000A4362D /* WHDispachQueue.h */,
+				CE5F36B4107039E000A4362D /* WHDispachQueue.m */,
+				CE298D5A1072CBFD00D50BFA /* WHCallback.h */,
+				CE298D5B1072CBFD00D50BFA /* WHCallback.m */,
+				CE298D681072CDC700D50BFA /* WHBlockCallback.h */,
+				CE298D691072CDC700D50BFA /* WHBlockCallback.m */,
+				CE298DA31072E49300D50BFA /* WHBlockWithArgumentCallback.h */,
+				CE298DA41072E49300D50BFA /* WHBlockWithArgumentCallback.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -459,7 +491,7 @@
 				CE6C94171002B3B800E59B43 /* WHHtmlCanvas.h in Headers */,
 				CE6C94191002B3B800E59B43 /* WHTag.h in Headers */,
 				CE6C941B1002B3B800E59B43 /* WHTagCollection.h in Headers */,
-				CE6C941D1002B3B800E59B43 /* WHCallback.h in Headers */,
+				CE6C941D1002B3B800E59B43 /* WHMethodCallback.h in Headers */,
 				CE6C941F1002B3B800E59B43 /* WHArrayCallback.h in Headers */,
 				CE6C94211002B3B800E59B43 /* WHRegisteredObject.h in Headers */,
 				CE6C94231002B3B800E59B43 /* WHStateRegistry.h in Headers */,
@@ -472,12 +504,36 @@
 				CE6CF4F91019357C00384D52 /* WHNavigation.h in Headers */,
 				CE6DA9C5101A792D00ED5D69 /* WHExampleApplication.h in Headers */,
 				CE6DAA2D101AB34900ED5D69 /* WHRegisteredCounter.h in Headers */,
+				CE5F357A106C622600A4362D /* WHGCDApplication.h in Headers */,
+				CE5F36B5107039E000A4362D /* WHDispachQueue.h in Headers */,
+				CE298D5C1072CBFD00D50BFA /* WHCallback.h in Headers */,
+				CE298D6A1072CDC700D50BFA /* WHBlockCallback.h in Headers */,
+				CE298DA51072E49300D50BFA /* WHBlockWithArgumentCallback.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CE5F36591070201C00A4362D /* ESTTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5F365F1070201D00A4362D /* Build configuration list for PBXNativeTarget "ESTTest" */;
+			buildPhases = (
+				CE5F36551070201C00A4362D /* Resources */,
+				CE5F36561070201C00A4362D /* Sources */,
+				CE5F36571070201C00A4362D /* Frameworks */,
+				CE5F36581070201C00A4362D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5F36611070202300A4362D /* PBXTargetDependency */,
+			);
+			name = ESTTest;
+			productName = ESTTest;
+			productReference = CE5F365A1070201C00A4362D /* ESTTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		CE6C940B1002B38E00E59B43 /* ESC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE6C94101002B38F00E59B43 /* Build configuration list for PBXNativeTarget "ESC" */;
@@ -495,25 +551,6 @@
 			productName = ESC;
 			productReference = CE6C940C1002B38E00E59B43 /* ESC.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		CE6C94BE1002B74100E59B43 /* ESCTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE6C94C31002B74200E59B43 /* Build configuration list for PBXNativeTarget "ESCTests" */;
-			buildPhases = (
-				CE6C94BA1002B74100E59B43 /* Resources */,
-				CE6C94BB1002B74100E59B43 /* Sources */,
-				CE6C94BC1002B74100E59B43 /* Frameworks */,
-				CE6C94BD1002B74100E59B43 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE6C94C51002B74A00E59B43 /* PBXTargetDependency */,
-			);
-			name = ESCTests;
-			productName = ESCTests;
-			productReference = CE6C94BF1002B74100E59B43 /* ESCTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 		CE6C94E41002CB8600E59B43 /* counter */ = {
 			isa = PBXNativeTarget;
@@ -546,22 +583,22 @@
 			projectRoot = "";
 			targets = (
 				CE6C940B1002B38E00E59B43 /* ESC */,
-				CE6C94BE1002B74100E59B43 /* ESCTests */,
 				CE6C94E41002CB8600E59B43 /* counter */,
 				CE6C95B91002E2CF00E59B43 /* demo.sh */,
+				CE5F36591070201C00A4362D /* ESTTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE6C94081002B38E00E59B43 /* Resources */ = {
+		CE5F36551070201C00A4362D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE6C94BA1002B74100E59B43 /* Resources */ = {
+		CE6C94081002B38E00E59B43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,7 +608,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE6C94BD1002B74100E59B43 /* ShellScript */ = {
+		CE5F36581070201C00A4362D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -600,6 +637,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE5F36561070201C00A4362D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F36771070204300A4362D /* WHApplicationTest.m in Sources */,
+				CE5F367A1070204E00A4362D /* WHArrayCallbackTests.m in Sources */,
+				CE5F367B1070204F00A4362D /* WHCallbackTest.m in Sources */,
+				CE5F367C1070205000A4362D /* WHCoreRender.m in Sources */,
+				CE5F367D1070205200A4362D /* WHRegisteredObjectTest.m in Sources */,
+				CE5F367E1070205300A4362D /* WHRequestTest.m in Sources */,
+				CE5F367F1070205400A4362D /* WHSessionTests.m in Sources */,
+				CE5F36801070205600A4362D /* WHStateRegistryTests.m in Sources */,
+				CE5F36831070205900A4362D /* WHTagTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE6C94091002B38E00E59B43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,7 +661,7 @@
 				CE6C94181002B3B800E59B43 /* WHHtmlCanvas.m in Sources */,
 				CE6C941A1002B3B800E59B43 /* WHTag.m in Sources */,
 				CE6C941C1002B3B800E59B43 /* WHTagCollection.m in Sources */,
-				CE6C941E1002B3B800E59B43 /* WHCallback.m in Sources */,
+				CE6C941E1002B3B800E59B43 /* WHMethodCallback.m in Sources */,
 				CE6C94201002B3B800E59B43 /* WHArrayCallback.m in Sources */,
 				CE6C94221002B3B800E59B43 /* WHRegisteredObject.m in Sources */,
 				CE6C94241002B3B800E59B43 /* WHStateRegistry.m in Sources */,
@@ -624,22 +677,11 @@
 				CE2D4D4A100C2ECD005177DF /* WHChoiceDialog.m in Sources */,
 				CE3E6D3D1013FD8200F128B3 /* WHFormSelectTag.m in Sources */,
 				CE6CF4FA1019357C00384D52 /* WHNavigation.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE6C94BB1002B74100E59B43 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE6C94C61002B76500E59B43 /* WHCoreRender.m in Sources */,
-				CE6C94C91002B78F00E59B43 /* WHTagTest.m in Sources */,
-				CE6C94CA1002B79700E59B43 /* WHRequestTest.m in Sources */,
-				CE6C94CB1002B79800E59B43 /* WHRegisteredObjectTest.m in Sources */,
-				CE6C94CC1002B79900E59B43 /* WHArrayCallbackTests.m in Sources */,
-				CE6C94CD1002B79A00E59B43 /* WHCallbackTest.m in Sources */,
-				CE6C94CE1002B79B00E59B43 /* WHSessionTests.m in Sources */,
-				CE6C94CF1002B79C00E59B43 /* WHStateRegistryTests.m in Sources */,
-				CE6C94D01002B79D00E59B43 /* WHApplicationTest.m in Sources */,
+				CE5F357B106C622600A4362D /* WHGCDApplication.m in Sources */,
+				CE5F36B6107039E000A4362D /* WHDispachQueue.m in Sources */,
+				CE298D5D1072CBFD00D50BFA /* WHCallback.m in Sources */,
+				CE298D6B1072CDC700D50BFA /* WHBlockCallback.m in Sources */,
+				CE298DA61072E49300D50BFA /* WHBlockWithArgumentCallback.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,10 +702,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE6C94C51002B74A00E59B43 /* PBXTargetDependency */ = {
+		CE5F36611070202300A4362D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE6C940B1002B38E00E59B43 /* ESC */;
-			targetProxy = CE6C94C41002B74A00E59B43 /* PBXContainerItemProxy */;
+			targetProxy = CE5F36601070202300A4362D /* PBXContainerItemProxy */;
 		};
 		CE6C958A1002DEF400E59B43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -711,6 +753,60 @@
 			};
 			name = Release;
 		};
+		CE5F365D1070201C00A4362D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "ESTTest-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ESTTest;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE5F365E1070201C00A4362D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "ESTTest-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ESTTest;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		CE6C940E1002B38F00E59B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,6 +821,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "ESC-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				OTHER_LDFLAGS = (
@@ -765,66 +862,6 @@
 			};
 			name = Release;
 		};
-		CE6C94C11002B74100E59B43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/build/Debug\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "ESCTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = ESCTests;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		CE6C94C21002B74100E59B43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-					"\"$(SRCROOT)/build/Debug\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "ESCTests-Info.plist";
-				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
-					"-framework",
-					SenTestingKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = ESCTests;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		CE6C94E81002CB8600E59B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -836,6 +873,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = /usr/local/bin;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -904,20 +942,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE5F365F1070201D00A4362D /* Build configuration list for PBXNativeTarget "ESTTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5F365D1070201C00A4362D /* Debug */,
+				CE5F365E1070201C00A4362D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE6C94101002B38F00E59B43 /* Build configuration list for PBXNativeTarget "ESC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE6C940E1002B38F00E59B43 /* Debug */,
 				CE6C940F1002B38F00E59B43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE6C94C31002B74200E59B43 /* Build configuration list for PBXNativeTarget "ESCTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE6C94C11002B74100E59B43 /* Debug */,
-				CE6C94C21002B74100E59B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

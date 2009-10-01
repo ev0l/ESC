@@ -23,16 +23,25 @@
 	[self attributeAt:@"type" put:aType];
 }
 
--(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args {
-	[self registerCallbackOnObject:anObject withSelector:aSelector andArguments:args];
+-(void)postCallbackSetup{
 	
 	[self attributeAt:@"name" put:[NSString stringWithFormat:@"_i-%d", callbackKey]];
 	
+}	
+
+-(id)callbackOnObject:(id)anObject withSelector:(SEL)aSelector andArguments:(NSArray*)args {
+	[self registerCallbackOnObject:anObject withSelector:aSelector andArguments:args];
 	return self;
 }
 
 -(id)with:(NSString*)aValue{
 	[self attributeAt:@"value" put:aValue];
+	return self;
+}
+
+-(id)block:(void (^)(id anObject)) aBlock{
+	[self registerBlockWithArgument: aBlock];
+	[self postCallbackSetup];
 	return self;
 }
 

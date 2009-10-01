@@ -12,7 +12,7 @@
 @implementation WHCallbackTest
 
 -(void)setUp{
-	callback = [WHCallback new];
+	callback = [WHMethodCallback new];
 	called = NO;
 	argument = @"argument Not Set";
 }
@@ -28,7 +28,7 @@
 
 -(void)testNoArguments {
 
-	callback = (WHCallback*)[WHCallback newWithObject:self andSelector:@selector(noReturn)];
+	callback = (WHMethodCallback*)[WHMethodCallback newWithObject:self andSelector:@selector(noReturn)];
 	[callback run];
 	STAssertTrue(called,@"Argument not sent");
 }
@@ -77,7 +77,7 @@
 
 
 -(void)testRunWithArgument {
-	callback = (WHCallback*)[WHCallback newWithObject:self andSelector:@selector(oneArgument:)];
+	callback = (WHMethodCallback*)[WHMethodCallback newWithObject:self andSelector:@selector(oneArgument:)];
 	[callback runWithArgument:@"Foo2"];
 	STAssertTrue([@"Foo2" isEqual:argument],argument);
 	

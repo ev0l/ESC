@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "WHHtmlCanvas.h"
-#import "WHTagCollection.h";
+#import "WHTagCollection.h"
 
 @interface WHHtmlRoot : NSObject {
 	NSString* mimeType;

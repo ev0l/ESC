@@ -1,20 +1,18 @@
 //
 //  WHCallback.h
-//  LakeFrontHTML
+// Implicitly abstract class
+//  ESC
 //
-//  Created by William Harford on 25/06/09.
+//  Created by William Harford on 09-09-29.
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
 
-
+/*ABSTRACT*/
 @interface WHCallback : NSObject {
-	id object;
-	SEL selector;
-	NSArray* arguments;
 
-	
 }
 
 -(id)runWithArguments:(NSArray*)args;
@@ -24,13 +22,6 @@
  */
 -(id)runWithArgument:(id)anObject ;
 -(id)run;
-+(WHCallback*)newWithObject:(id)anObject andSelector:(SEL)aSelector;
-+(WHCallback*)newWithObject:(id)anObject selector:(SEL)aSelector andArguments:(NSArray*)args;
-
-
-@property(retain) id object;
-@property SEL selector;
-@property(retain) NSArray* arguments;
 
 
 @end

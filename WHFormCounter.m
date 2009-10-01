@@ -14,7 +14,7 @@
 -(id)setCount:(NSString*)aStringCount {
 	counter = [NSNumber numberWithInt:[aStringCount integerValue]];
 	if(counter == 0){
-		NSLog(aStringCount);
+		NSLog(@"%@",aStringCount);
 	}
 	return self;
 }
@@ -29,10 +29,13 @@
 	
 	WHFormTag *form = [html formTag];
 	
-	WHFormInputTag* plusInput = (WHFormInputTag*)[[[html formInputTagWithType:@"submit"] callbackOnObject:self 
-																			 withSelector:@selector(setCount:) 
-																			 andArguments:nil]
-								 with:@"++"];
+	WHFormInputTag* plusInput = (WHFormInputTag*)[[[html formInputTagWithType:@"submit"] 
+																		block:
+																		^(id aCount){
+																				
+																			[self setCount:aCount];
+																		} ]
+																		with:@"++"];
 	
 	
 	[plusInput attributeAt:@"value" put:[NSString stringWithFormat:@"%d",([counter intValue] + 1 )]];
@@ -63,7 +66,7 @@
 	
 	
 	
-	[input callbackOnObject:self withSelector:@selector(setCount:) andArguments:nil];
+	[input block:^(id count){[self setCount:count];}];
 	[tag addContent:input];
 	
 	WHFormInputTag* submit = [html formInputTagWithType:@"submit"];
